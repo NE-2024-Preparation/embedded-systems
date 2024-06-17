@@ -1,2 +1,2 @@
-0 Ok
-1 Not Ok
+0 ok sign
+1 not okay

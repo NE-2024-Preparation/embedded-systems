@@ -3,11 +3,6 @@ import time
 import sqlite3
 import os
 
-images_folder = "dataset"
-
-if not os.path.exists(images_folder):
-    os.makedirs(images_folder)
-
 def generate_uid():
     # Get current Unix timestamp in milliseconds
     current_millis = int(time.time() * 1000)
@@ -114,7 +109,7 @@ if len(faces) > 0:
             if (time.time() - current_time) * 1000 >= interval and image_count < 201:
                 # Generate filename without spaces
                 image_name = f"data.{customer_uid}_{image_count+1}.jpg"
-                image_path = os.path.join(images_folder, image_name)
+                image_path = os.path.join('dataset', image_name)
 
                 # Save the captured image
                 cv2.imwrite(image_path, gray[y:y + h, x:x + w])

@@ -60,7 +60,7 @@ def run_face_detection():
             customer_name = "Unknown"
         
 
-            if 65<Confidence <85 :
+            if 50<Confidence <75 :
                 try:
                     c.execute("SELECT customer_name FROM customers WHERE customer_uid = ?", (ID,))
                     print(ID)

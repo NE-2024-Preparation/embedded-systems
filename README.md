@@ -24,8 +24,8 @@ This application detects and recognizes customers' faces, ensuring that the face
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/patriicke/embedded-vito-project.git
-    cd embedded-vito-project
+    git clone https://github.com/your-repository/face-sign-recognition.git
+    cd face-sign-recognition
     ```
 
 2. **Install Dependencies**
@@ -34,15 +34,15 @@ This application detects and recognizes customers' faces, ensuring that the face
     pip install opencv-python opencv-contrib-python tensorflow==2.12.0 keras==2.12.0 numpy
     ```
 
-    **N.B:** If you already installed TensorFlow and Keras and you are having trouble loading the Teachable Machine model, uninstall Keras and TensorFlow and install the indicated versions:
+**N.B:** If you already installed TensorFlow and Keras and you are having trouble loading the Teachable Machine model, uninstall Keras and TensorFlow and install the indicated versions:
 
-    ```bash
-    pip uninstall keras tensorflow
-    ```
+```bash
+pip uninstall keras tensorflow
+```
 
-    ```bash
-    pip install tensorflow==2.12.0 keras==2.12.0 numpy
-    ```
+```bash
+pip install tensorflow==2.12.0 keras==2.12.0 numpy
+```
 
 3. **Prepare the Models and Database**
     - **Face Recognition Model**: Ensure you have the pre-trained `trained_lbph_face_recognizer_model.yml` file in the `models/` directory.
@@ -70,8 +70,8 @@ This application detects and recognizes customers' faces, ensuring that the face
 
 ## File Structure
 
-```folder
-embedded-vito-project/
+```
+face-sign-recognition/
 │
 ├── models/
 │   ├── trained_lbph_face_recognizer_model.yml

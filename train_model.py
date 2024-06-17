@@ -25,9 +25,9 @@ def getImagesAndLabels(path):
     return faceSamples, Ids
 
 def Train():
-    print("Start Training")
     recognizer = cv2.face.LBPHFaceRecognizer_create()
     faces, Ids = getImagesAndLabels('./dataset')
+    print(Ids)
     recognizer.train(faces, np.array(Ids))
     recognizer.save("models/trained_lbph_face_recognizer_model.yml")
     print("Done Training")
